@@ -42,8 +42,9 @@ function createEnd() {
     deleteBtn.addEventListener("click", e => {
         createMode = true;
     });
-    let text = prompt("내용을 작성해주세요.");
-    box.innerText = text;
+    let text = prompt("class명을 입력해주세요.");
+    box.classList.add(text);
+    box.innerText = "class : " + box.classList;
     box.style.background = "rgb(" + randomNum(0, 255) + "," + randomNum(0, 255) + "," + randomNum(0, 255) + ")";
     box.style.border = 0;
     box.append(deleteBtn);
