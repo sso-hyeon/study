@@ -1,9 +1,16 @@
-.wrapper {
+* {
+    font-family: "Do Hyeon", sans-serif;
+}
+
+header {
+    text-align: center;
+}
+
+.heartWrap {
     border: 1px solid #000;
-    border-radius: 50%;
-    margin: 50px auto;
-    width: 500px;
-    height: 500px;
+    margin: 30px auto;
+    width: 400px;
+    height: 400px;
     position: relative;
     overflow: hidden;
 }
@@ -11,6 +18,27 @@
     position: absolute;
 }
 
-.img0 {
-    bottom: 10px;
+footer {
+    text-align: center;
+}
+
+.heart-count-input {
+    outline: none;
+    border: 1px solid #999;
+    padding: 10px;
+    margin: 0;
+    box-sizing: border-box;
+    width: 250px;
+}
+.enter-btn {
+    outline: none;
+    border: 0;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: cornflowerblue;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    margin-left: 10px;
 }
