@@ -1,0 +1,44 @@
+.wrapper {
+    margin: 50px auto;
+    width: 70%;
+}
+.timeTxt {
+    margin: 50px auto 0;
+    line-height: 50px;
+    text-align: center;
+    font-size: 50px;
+}
+.btnWrap {
+    text-align: center;
+}
+.btn {
+    outline: none;
+    border: 0;
+    width: 100px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 45px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: royalblue;
+    border-radius: 5px;
+}
+.btn:hover {
+    background-color: slateblue;
+}
+ul {
+    padding: 0;
+    border-top: 1px solid #999;
+    width: 400px;
+    margin: 40px auto 0;
+}
+li {
+    list-style: none;
+    font-size: 20px;
+    padding: 10px 30px;
+    border-bottom: 1px solid #999;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
