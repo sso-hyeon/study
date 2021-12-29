@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mini Game</title>
+        <link rel="stylesheet" href="/common_file/css/reset.css" />
+        <link rel="stylesheet" href="css/main.css" />
+    </head>
+    <body>
+        <img src="img/logo.png" class="logo" />
+        <div class="buttons">
+            <button class="btn imgBtn tBtn" data-list="category">
+                <img src="img/blue_t.png" data-list="category" data-key="type" data-value="tshirt" />
+            </button>
+            <button class="btn imgBtn pBtn" data-list="category">
+                <img src="img/blue_p.png" data-list="category" data-key="type" data-value="pants" />
+            </button>
+            <button class="btn imgBtn sBtn" data-list="category">
+                <img src="img/blue_s.png" data-list="category" data-key="type" data-value="skirt" />
+            </button>
+            <button class="btn colorBtn blue" data-list="color" data-key="color" data-value="blue" class="imgBtn">
+                Blue
+            </button>
+            <button class="btn colorBtn yellow" data-list="color" data-key="color" data-value="yellow" class="imgBtn">
+                Yellow
+            </button>
+            <button class="btn colorBtn pink" data-list="color" data-key="color" data-value="pink" class="imgBtn">
+                Pink
+            </button>
+        </div>
+        <ul class="items"></ul>
+        <script src="js/main.js"></script>
+        <script src="js/clickEvent.js"></script>
+        <!-- <script src="js/result/main.js"></script> -->
+    </body>
+</html>
