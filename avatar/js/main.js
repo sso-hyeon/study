@@ -1,15 +1,17 @@
 const enterBtn = document.querySelector(".enter-btn");
 const result = document.querySelector(".result");
 const happyCheck = document.querySelector(".happyCheck");
+const seedInput = document.querySelector(".seed");
+const selectBox = document.querySelector("#selectBox");
 
 function avatarApi(selectValue, inputValue) {
     const xhr = new XMLHttpRequest();
     const method = "GET";
-    const url = "https://avatars.dicebear.com/api/";
     const sprites = selectValue;
     const seed = inputValue + ".svg";
+    const url = "https://avatars.dicebear.com/api/" + sprites + "/" + seed + "?backgroundColor=white";
 
-    xhr.open(method, url + sprites + "/" + seed);
+    xhr.open(method, url);
     xhr.onreadystatechange = function (event) {
         const { target } = event;
         if (target.readyState === XMLHttpRequest.DONE) {
@@ -34,8 +36,19 @@ function createImg(target) {
     result.append(img);
 }
 
-enterBtn.addEventListener("click", function () {
-    let selectValue = document.querySelector("#selectBox").value;
-    let inputValue = document.querySelector(".seed").value.trim("");
+function render() {
+    let selectValue = selectBox.value;
+    let inputValue = seedInput.value.trim("");
     avatarApi(selectValue, inputValue);
+    seedInput.value = "";
+}
+
+enterBtn.addEventListener("click", function () {
+    render();
+});
+
+seedInput.addEventListener("keydown", function (event) {
+    if (event.keyCode === 13) {
+        render();
+    }
 });
