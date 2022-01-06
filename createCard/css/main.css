@@ -1,0 +1,90 @@
+/* common */
+body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+html,
+body {
+    width: 540px;
+    margin: 0 auto;
+    -webkit-tap-highlight-color: transparent;
+    text-align: center;
+}
+
+.d-none {
+    display: none;
+}
+
+.md {
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+.op {
+    opacity: 0;
+}
+
+img {
+    display: block;
+}
+
+input[type="number"],
+input[type="email"],
+input[type="text"] {
+    outline: none;
+    padding: 5px;
+    border: 1px solid #999;
+    width: 50%;
+}
+
+/* common-E */
+/* header */
+/* header-E */
+/* contents */
+#contents {
+    /* display: flex; */
+}
+.userinfo {
+    padding: 20px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+.userinfo div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.radio-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.radio-wrap input {
+    margin: 0 8px;
+    width: 20px;
+    height: 20px;
+}
+
+.userinfo .btn-wrap {
+    width: 60%;
+    margin: 0 auto;
+}
+
+/* contents-card */
+.card {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+/* contents-card-E */
+/* contents-E */

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>create card</title>
+        <link rel="stylesheet" href="css/main.css" />
+    </head>
+    <body>
+        <div id="wrapper">
+            <header id="header">
+                <h1>create card</h1>
+            </header>
+            <section id="contents">
+                <section class="userinfo">
+                    <div class="name-wrap">
+                        <span>name</span>
+                        <input type="text" class="name" />
+                    </div>
+                    <div class="gender-wrap">
+                        <span>gender</span>
+                        <div class="radio-wrap">
+                            <label for="female">female</label>
+                            <input type="radio" name="gender" id="female" />
+                            <label for="male">male</label>
+                            <input type="radio" name="gender" id="male" />
+                        </div>
+                    </div>
+                    <div class="phonenum-wrap">
+                        <span>phone-number</span>
+                        <input type="number" name="phone" class="phone-number" />
+                    </div>
+                    <div class="email-wrap">
+                        <span>e-mail</span>
+                        <input type="email" name="email" class="email" />
+                    </div>
+                    <div class="btn-wrap">
+                        <button class="cancel-button">cancel</button>
+                        <button class="create-button">create</button>
+                    </div>
+                </section>
+                <section class="card">
+                    <div class="user-name">
+                        <span>name : </span>
+                    </div>
+                    <div class="user-gender">
+                        <span>gender : </span>
+                    </div>
+                    <div class="user-phone">
+                        <span>phone : </span>
+                    </div>
+                    <div class="user-email">
+                        <span>e-mail : </span>
+                    </div>
+                </section>
+            </section>
+            <footer id="footer"></footer>
+        </div>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
