@@ -10,7 +10,6 @@ body::-webkit-scrollbar {
 
 html,
 body {
-    width: 540px;
     margin: 0 auto;
     -webkit-tap-highlight-color: transparent;
     text-align: center;
@@ -43,28 +42,53 @@ input[type="text"] {
     width: 50%;
 }
 
+#wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
 /* common-E */
 /* header */
 /* header-E */
 /* contents */
 #contents {
-    /* display: flex; */
+    display: flex;
+    justify-content: space-between;
 }
 .userinfo {
+    width: 49%;
     padding: 20px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
 }
 
 .userinfo div {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 10px 0;
 }
 
-.radio-wrap {
+.userinfo div span {
+    display: block;
+    width: 30%;
+    text-align: left;
+}
+
+.fa-venus {
+    color: tomato;
+}
+
+.fa-mars {
+    color: teal;
+}
+
+.userinfo .radio-wrap {
+    width: 50%;
+    padding: 0 5px;
     display: flex;
     align-items: center;
+    justify-content: space-around;
 }
 
 .radio-wrap input {
@@ -74,16 +98,31 @@ input[type="text"] {
 }
 
 .userinfo .btn-wrap {
-    width: 60%;
-    margin: 0 auto;
+    width: 100%;
+    margin: 20px auto 0;
+}
+
+button {
+    outline: none;
+    border: 0;
+    background-color: dodgerblue;
+    color: white;
+    padding: 5px 0;
+    width: 45%;
+    border-radius: 5px;
+    font-size: 20px;
 }
 
 /* contents-card */
 .card {
-    margin-top: 50px;
+    width: 49%;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
 }
 
 /* contents-card-E */

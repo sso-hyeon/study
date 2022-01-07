@@ -30,7 +30,15 @@ function createUserInfo(value, userInfoTitle) {
     if (userInfoTitle === ".user-gender") {
         value.forEach(ele => {
             if (ele.checked) {
-                text.textContent = ele.id;
+                const genderIcon = document.createElement("i");
+                let gender;
+                if (ele.id === "female") {
+                    gender = "fa-venus";
+                } else if (ele.id === "male") {
+                    gender = "fa-mars";
+                }
+                genderIcon.classList = "fas " + gender;
+                text.append(genderIcon);
             } else {
                 return;
             }
