@@ -51,7 +51,7 @@ function avatarApi(selectValue, inputValue) {
     const method = "GET";
     const sprites = selectValue;
     const seed = inputValue + ".svg";
-    const url = "https://avatars.dicebear.com/api/" + sprites + "/" + seed + "?backgroundColor=white";
+    const url = "https://avatars.dicebear.com/api/" + sprites + "/" + seed;
 
     xhr.open(method, url);
     xhr.onreadystatechange = function (event) {
