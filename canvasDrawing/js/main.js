@@ -28,11 +28,11 @@ function moveHandler(e) {
     switch (brush) {
         case "color":
             context.beginPath();
-            context.arc(e.layerX, e.layerY, 10, 0, Math.PI * 2, false);
+            context.arc(e.offsetX, e.offsetY, 10, 0, Math.PI * 2, false);
             context.fill();
             break;
         case "img":
-            context.drawImage(imgEle, e.layerX, e.layerY, 50, 50);
+            context.drawImage(imgEle, e.offsetX, e.offsetY, 50, 50);
             break;
     }
 }
