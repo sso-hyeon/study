@@ -1,19 +1,29 @@
-h1 {
-    display: inline-block;
-    margin-right: 260px;
-}
 button {
+    all: unset;
+    cursor: pointer;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    color: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    font-weight: 800;
+
     margin: 0;
     line-height: 30px;
     padding: 0 10px;
     margin-left: 15px;
+}
+button:active {
+    transform: scale(0.98);
 }
 .wrapper {
     width: 600px;
     margin: 0 auto;
 }
 .canvas {
-    background: #eee;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 .color {
     margin: 10px 15px;
