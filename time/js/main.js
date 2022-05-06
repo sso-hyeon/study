@@ -46,6 +46,7 @@ resetBtn.addEventListener("click", () => {
     clearInterval(myTimer);
     m = 0;
     s = 0;
+    record = 1;
     min.innerText = "00";
     sec.innerText = "00";
     recordList.innerHTML = "";
